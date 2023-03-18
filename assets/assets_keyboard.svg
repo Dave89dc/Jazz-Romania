@@ -2,9 +2,9 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="278px" height="259.9px" viewBox="0 0 178 159.9" style="enable-background:new 0 0 178 159.9;" xml:space="preserve">
+	 width="1244px" height="570px" viewBox="0 0 944 360" style="enable-background:new 0 0 944 360;" xml:space="preserve">
 <style type="text/css">
-/*width="278px" height="259.9px"*/
+/*width="944px" height="360px"*/
 <![CDATA[
 	.st0{clip-path:url(#SVGID_11_);fill-rule:evenodd;clip-rule:evenodd;fill:#8C6239;}
 	.st1{clip-path:url(#SVGID_24_);fill-rule:evenodd;clip-rule:evenodd;fill:#8C6239;}
@@ -141,24 +141,43 @@
 	.st132{clip-path:url(#SVGID_34_);fill-rule:evenodd;clip-rule:evenodd;}
 ]]>
 </style>
+<rect class="st4" width="944" height="360"/>
 <g>
-	<g>
+	<defs>
+		<rect id="SVGID_39_" width="944" height="360"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_39_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st71">
 		<defs>
-			<rect id="SVGID_1_" width="154" height="159.9"/>
+			<rect id="SVGID_41_" x="-0.6" width="945.2" height="518"/>
 		</defs>
-		<clipPath id="SVGID_2_">
-			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_41_"  style="overflow:visible;"/>
 		</clipPath>
-		<path class="st71" d="M71.1,0H47.4c0,26.1-21.3,47.4-47.4,47.4v23.7C39.2,71.1,71.1,39.2,71.1,0"/>
-		<path class="st71" d="M0,106.6h45.8C40,126.9,19.4,136.2,0,136.2v23.7c19.1,0,36.7-6.1,49.6-17.3c13.8-11.9,21.5-28.9,21.5-47.9
-			V82.9H0V106.6z"/>
-		<path class="st71" d="M82.9,106.6h45.8c-5.8,20.3-26.4,29.6-45.8,29.6v23.7c19.1,0,36.7-6.1,49.6-17.3
-			c13.8-11.9,21.5-28.9,21.5-47.9V82.9H82.9V106.6z"/>
-		<polygon class="st71" points="106.6,32.4 125.9,71.1 152.4,71.1 117.2,0.6 96,0.6 60.8,71.1 87.3,71.1 		"/>
-	</g>
-	<g>
-		<path d="M151.8,0h9v1.6h-7.1v4.3h5.8v1.6h-5.8V14h-1.8V0z"/>
-		<path d="M164.2,0h2.2l4.7,11.4L175.8,0h2.2v14h-1.8V3.4L171.8,14h-1.5l-4.4-10.6V14h-1.8V0z"/>
+		<path style="clip-path:url(#SVGID_4_);fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;" d="M167.1,434.1v-74.9V158.8V83.9
+			C167.1,37.7,129.4,0,83.3,0C37.1,0-0.6,37.7-0.6,83.9v74.9v200.4v74.9c0,46.1,37.7,83.9,83.9,83.9
+			C129.4,518,167.1,480.3,167.1,434.1"/>
+		<path style="clip-path:url(#SVGID_4_);fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;" d="M361.5,434.1v-74.9V158.8V83.9
+			c0-46.1-37.7-83.9-83.9-83.9c-46.1,0-83.9,37.7-83.9,83.9v74.9v200.4v74.9c0,46.1,37.7,83.9,83.9,83.9
+			C323.8,518,361.5,480.3,361.5,434.1"/>
+		<path style="clip-path:url(#SVGID_4_);fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;" d="M555.9,434.1v-74.9V158.8V83.9
+			C555.9,37.7,518.1,0,472,0s-83.9,37.7-83.9,83.9v74.9v200.4v74.9c0,46.1,37.7,83.9,83.9,83.9S555.9,480.3,555.9,434.1"/>
+		<path style="clip-path:url(#SVGID_4_);fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;" d="M750.2,434.1v-74.9V158.8V83.9
+			c0-46.1-37.7-83.9-83.9-83.9c-46.1,0-83.9,37.7-83.9,83.9v74.9v200.4v74.9c0,46.1,37.7,83.9,83.9,83.9
+			C712.5,518,750.2,480.3,750.2,434.1"/>
+		<path style="clip-path:url(#SVGID_4_);fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;" d="M776.9,83.9v74.9v200.4v74.9
+			c0,46.1,37.7,83.9,83.9,83.9c46.1,0,83.9-37.7,83.9-83.9v-74.9V158.8V83.9c0-46.1-37.7-83.9-83.9-83.9
+			C814.6,0,776.9,37.7,776.9,83.9"/>
+		<path class="st72" d="M240.5,417.7V373V259.8v-44.7c0-33-27-60-60-60c-33,0-60,27-60,60v44.7V373v44.7c0,33,27,60,60,60
+			C213.5,477.7,240.5,450.7,240.5,417.7"/>
+		<path style="clip-path:url(#SVGID_4_);fill-rule:evenodd;clip-rule:evenodd;" d="M434.8,417.7V373V259.8v-44.7c0-33-27-60-60-60
+			c-33,0-60,27-60,60v44.7V373v44.7c0,33,27,60,60,60C407.8,477.7,434.8,450.7,434.8,417.7"/>
+		<path class="st72" d="M823.6,417.7V316.4V215.1c0-33-27-60-60-60c-33,0-60,27-60,60v44.7V373v44.7c0,33,27,60,60,60
+			C796.6,477.7,823.6,450.7,823.6,417.7"/>
+		<path style="clip-path:url(#SVGID_4_);fill-rule:evenodd;clip-rule:evenodd;" d="M629.2,417.7V373V259.8v-44.7c0-33-27-60-60-60
+			s-60,27-60,60v44.7V373v44.7c0,33,27,60,60,60S629.2,450.7,629.2,417.7"/>
 	</g>
 </g>
 </svg>
