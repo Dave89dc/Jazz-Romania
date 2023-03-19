@@ -12,41 +12,58 @@ html,body{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: auto;
     font-family: DM Sans, sans-serif;
 }
 
 header{
     background-color: rgb(255, 204, 0);
     width: 100%;
-    height: auto;
-    display: flex;
-    
-}
-
-.header-left, .play {
-    width: 50%;
     height: 100vh;
-}
-
-.play-img {
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    cursor: pointer;
-}
-
-.header-left{
-    width: 50%;
-    height: auto;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "FM Play"
+    "Song Play";
 }
 
 .FM {
+ grid-area: FM;
+ padding: 20px;
+}
+
+.text-header {
+    grid-area: Song;
+    padding: 20px;
+    margin-top: 11vw;
+}
+
+.text-header-box {
+    height: 100%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 0px;
+    padding: 0px;
+}
+
+.play {
+    grid-area: Play;
+}
+
+.play-img {
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    padding-left: 3vw;
     cursor: pointer;
+}
+
+.FM-img {
+    cursor: pointer;
+    width: 64%;
 }
 
 .FM, .text-header{
@@ -77,12 +94,15 @@ h1{
 
 .section-1 {
     width: 100%;
-    height: 237vh;
+    height: 115vw;
     background-color: rgb(101, 13, 151);
+    padding: 0px;
 }
 
 .section-1-img {
-    height: 100%;
+    height: 115vw;
+    margin: 0;
+    width: 100%;
 }
 
 .song {
@@ -100,44 +120,15 @@ section, footer {
 .section-2 {
     background-color: rgb(255, 204, 0);
     width: 100%;
-    height: 454vh;
+    height: auto;
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding-right: 1vw;
+    padding-top: 1vw;
 }
 
 .section-2 > div {
     width: 100%;
-}
-
-footer {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-basis: 0;
-}
-
-.bocca {
-    width: 50%;
-    height: 100%;
-    background-color: rgb(101, 13, 151);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.freccia {
-    width: 50%;
-    height: 100%;
-    background-color: #fc3636;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.freccia-inizio:hover {
-    animation: rotazione-freccia 0.2s linear forwards;
 }
 
 .section-2-primo {
@@ -147,9 +138,8 @@ footer {
 .h1-section-2 {
     margin: 0px;
     padding: 0px;
-    font-size: 275px;
-    font-weight: 800;
-    line-height: 250px;
+    font-size: 15vw;
+    line-height: 12vw;
 }
 
 .container1-section-2 {
@@ -158,33 +148,35 @@ footer {
 }
 
 .cerchio-section-2 {
-    width: 300px;
-    height: auto;
+    width: 20vw;
 }
 
 .cerchio {
-    margin: 8px;
-    margin-left: 60px;
-    width: 70%;
+    width: 11vw;
+    height: fit-content;
+    margin-right: 1vw;
+    margin-top: 0.4vh;
 }
 
 .curva {
     position: relative;
-    bottom: 230px;
-    width: 100%;
+    bottom: 11vw;
+    width: 41vw;
+    margin-top: 0%;
+    padding-left: 1vw;
 }
 
 .container2-section-2 {
     display: flex;
     justify-content: space-between;
-    height: 80vh;
-    width: 100%;
+    height: auto;
+    width: 100vw;
 }
 
 .lista-FM {
     width: 32%;
     position: relative;
-    bottom: 300px;
+    bottom: 15vw;
     right: 20px;
 }
 
@@ -219,17 +211,17 @@ footer {
 
 .container3-section-2 {
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: auto;
     justify-content: space-between;
     align-items: center;
 }
 
 .online-list {
-    width: 32%;
+    width: 40%;
     height: auto;
     position: relative;
-    bottom: 300px;
+    bottom: 30vh;
 }
 
 .online-list > div {
@@ -250,7 +242,7 @@ footer {
 
 .letter-A {
     padding-right: 18px;
-    height: 111vh;
+    width: 65vw;
 }
 
 .online-span {
@@ -270,11 +262,11 @@ footer {
 }
 
 .device-list > div {
-    width: 98%;
+    width: 97%;
+    margin: auto;
     height: auto;
     border-bottom: 1px solid black;
     padding: 0px;
-    margin-left: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -314,13 +306,17 @@ footer {
     display: flex;
     justify-content: center;
     padding: 0px;
-    gap: 0px;
+    padding-bottom: 9vw;
 }
 
 .doppia-curva > div {
     margin-top: 40px;
     margin-left: 0px;
     padding: 0px;
+}
+
+.doppia-curva-img {
+    width: 100%;
 }
 
 .section-3 {
@@ -342,12 +338,12 @@ footer {
 }
 
 .grid-container {
-    width: 100%;
+    width: 95%;
+    margin: auto;
     margin-bottom: 260px;
-    padding: 30px;
     height: auto;
     display: grid;
-    gap: 30px;
+    gap: 2vw;
     grid-template-columns: (3 / 1fr);
     grid-template-areas: 
     ". . Mon"
@@ -386,7 +382,7 @@ footer {
 }
 
 .grid-container-div {
-    width: 100%;
+    width: 90%;
     height: auto;
     display: flex;
     border-bottom: 1px solid lightgray;
@@ -403,6 +399,14 @@ footer {
     font-size: 24px;
 }
 
+.day-span {
+    width: 120px;
+}
+
+.day-span-text {
+    width: 100px;
+}
+
 .day-span-text {
     width: 80%;
 }
@@ -410,7 +414,6 @@ footer {
 .section-5 {
     margin-top: 30px;
     width: 100%;
-    height: 600vh;
 }
 
 .div-section-5 {
@@ -425,15 +428,14 @@ footer {
 .div-section-5-img {
     background-color: rgb(255, 204, 0);
     width: 100%;
-    height: 76vh;
+    height: 37vw;
     display: flex;
     justify-content: center;
     align-items: end;
 }
 
 .keyboards {
-    position: relative;
-    top: 48px;
+    width: 64vw;
 }
 
 marquee {
@@ -442,33 +444,33 @@ marquee {
 
 .section-6 {
     width: 100%;
-    height: 200vh;
+    height: auto;
     display: flex;
     background-color: rgb(8, 152, 248);
+    padding-top: 2vw;
+    padding-bottom: 7vw;
 }
 
 .pecora {
     width: 50%;
     height: auto;
-    padding-top: 80px;
-    padding-bottom: 100px;
+    padding-top: 3vw;
+    padding-bottom: 2vw;
     padding-left: 160px;
 }
 
 .sheep {
     position: sticky;
-    width: 75%;
+    width: 32vw;
     top: 40px;
 }
 
 .lista-jazz-romania {
-    width: 50%;
-    height: 100%;
+    width: 50vw;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
-    bottom: 40px;
 }
 
 .lista-jazz-romania > div {
@@ -499,12 +501,16 @@ marquee {
 }
 
 .section-7 {
-    height: 118vh;
+    height: 58vw;
     background-color: rgb(101, 13, 151);
+    padding: 0px;
 }
 
 .section-7-img {
-    height: 100%;
+    width: 100%;
+    height: 64vw;
+    position: relative;
+    bottom: 3vw;
 }
 
 .section-8 {
@@ -520,22 +526,22 @@ marquee {
     margin: 0px;
     padding: 0px;
     padding-left: 15px;
-    font-size: 275px;
     font-weight: 800;
-    line-height: 250px;
+    font-size: 15vw;
+    line-height: 12vw;
     position: sticky;
     top: 20px;
 }
 
 .div-cerchio-8 {
-    width: 100%;
+    width: 48vw;
     display: flex;
     justify-content: end;
-    padding-left: 550px;
+    padding-left: 26vw;
 }
 
 .list-section-8 {
-    width: 50%;
+    width: 50vw;
     height: auto;
 }
 
@@ -586,6 +592,41 @@ marquee {
     padding-bottom: 50px;
 }
 
+footer {
+    width: 100%;
+    height: 50vw;
+    display: flex;
+    flex-basis: 0;
+}
+
+.bocca {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(101, 13, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.freccia {
+    width: 50%;
+    height: 100%;
+    background-color: #fc3636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.freccia-inizio {
+    width: 30vw;
+    margin: auto;
+}
+
+.freccia-inizio:hover {
+    animation: rotazione-freccia 0.2s linear forwards;
+}
+
 @keyframes rotazione-freccia {
 
     0% {
@@ -596,4 +637,619 @@ marquee {
         transform: rotate(-45deg);
     }
 
+}
+
+@media screen and (max-width: 1380px) {
+
+    .container3-section-2 {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .letter-A {
+        padding-right: 0px;
+        width: 90vh;
+        /*width: 65vw;*/
+    }
+    
+    .container-A-letter {
+        width: 70%;
+    }
+
+    .online-list {
+        width:50vh;
+        height: auto;
+        position: relative;
+        bottom: 10vh;
+    }
+    
+    .online-list > div {
+        width: 95%;
+        height: auto;
+        border-bottom: 1px solid black;
+        margin-left: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 1190px) {
+
+    .container3-section-2 {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .letter-A {
+        padding-right: 0px;
+        width: 55vw;
+        /*width: 65vw;*/
+    }
+    
+    .container-A-letter {
+        width: 55%;
+    }
+
+    .online-list {
+        width: 95%;
+        height: auto;
+        position: relative;
+        bottom: 10vh;
+    }
+    
+    .online-list > div {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid black;
+        margin-left: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+
+    header {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 100%;    /*25% 60% 5%;*/
+        grid-template-rows: 18vh 68vh 38vh;
+        grid-template-areas: 
+        "FM"
+        "Play"
+        "Song";
+    }
+
+    .play-img {
+        width: 500px;
+        margin: 0px;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+
+    .FM-img {
+        cursor: pointer;
+        width: 35vh;
+    }
+
+    .text-header {
+        padding: 20px;
+        margin-top: 10vh;
+    }
+
+}
+
+@media screen and (max-width: 1120px) {
+
+    .body {
+        width: auto;
+    }
+    
+    .cerchio {
+        display: none;
+    }
+
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container2-section-2 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 10px;
+        height: 125vh;
+    }
+
+    .curva {
+        position: relative;
+        bottom: 11vw;
+        width: 42vw;
+        margin-top: 0%;
+    }
+
+    .lista-FM {
+        width: 85%;
+        height: fit-content;
+        margin: auto;
+        margin-top: 6vw;
+    }
+
+    .testa-lista-FM > p {
+        font-size: 60px;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .FM-span {
+        font-size: 90px;
+        margin-left: 20px;
+    }
+    
+    .list-span {
+        font-size: 20px;
+    }
+
+    .container3-section-2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .online-list {
+        width: 91vw;
+        margin: auto;
+        height: auto;
+        position: initial;
+    }
+    
+    .online-list > div {
+        width: 96%;
+        margin: auto;
+        padding: 0px;
+        height: auto;
+        border-bottom: 1px solid black;
+        margin-left: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .testa-online-list p {
+        font-size: 60px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container-A-letter {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .letter-A {
+        width: 95vw;
+    }
+
+    .container4-section-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        padding-bottom: 100px;
+    }
+
+    .device-list > div {
+        width: 95%;
+        margin: auto;
+        height: auto;
+        border-bottom: 1px solid black;
+        padding: 0px;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .device-span {
+        font-size: 70px;
+        margin-left: 20px;
+    }
+
+    .testa-device-list {
+        display: flex;
+        align-items: start;
+    }
+    
+    .testa-device-list p {
+        font-size: 50px;
+        margin: 0px;
+        padding: 0px;
+        padding-left: 0px;
+    }
+    
+    .device-span-p {
+        font-size: 45px;
+        margin: 0px;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    
+    .device-paragraf {
+        padding-top: 0px;
+        font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: auto;
+        margin-bottom: 260px;
+        height: auto;
+    }
+    
+    .grid-container-div {
+        width: 90%;
+        height: auto;
+        display: flex;
+        border-bottom: 1px solid lightgray;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 100px 20px 0px;
+    }
+
+    .section-6 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(8, 152, 248);
+        padding-top: 2vw;
+        padding-bottom: 7vw;
+    }
+
+    .pecora {
+        width: 100%;
+        height: auto;
+        padding-top: 3vw;
+        padding-bottom: 2vw;
+        padding-left: 0px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sheep {
+        position: initial;
+        width: 48vw;
+    }
+    
+    .lista-jazz-romania {
+        width: 95%;
+        margin: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .lista-jazz-romania > div {
+        width: 97%;
+        height: auto;
+        border-bottom: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .jazz-title {
+        color: white;
+        font-size: 60px;
+        padding-bottom: 35px;
+        margin-top: 0;
+    }
+    
+    .jazz-span {
+        color: white;
+        font-size: 20px;
+        margin-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    .jazz-span-2 {
+        color: white;
+    }
+
+    .section-8 {
+        width: 100%;
+        padding-top: 20px;
+        height: auto;
+        background-color: rgb(255, 204, 0);
+        display: flex;
+        justify-content: initial;
+        flex-direction: column;
+    }
+    
+    .h1-section-8 {
+        margin: 0px;
+        padding: 0px;
+        padding-left: 15px;
+        font-weight: 800;
+        font-size: 15vw;
+        line-height: 12vw;
+        position: sticky;
+        top: 20px;
+    }
+    
+    .list-section-8 {
+        width: 100%;
+        height: auto;
+    }
+    
+    .list-8 {
+        width: 96%;
+        margin: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: 200px;
+    }
+
+    .box-list-8 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid black;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .span-list-8 {
+        font-size: 40px;
+    }
+    
+    .span-list-8-small {
+        font-size: 25px;
+    }
+    
+    .span-list-8-facebook {
+        font-size: 110px;
+    }
+    
+    .arrow-8 {
+        width: 60px;
+    }
+    
+    .eye {
+        width: 80%;
+    }
+    
+    .box-list-8-eye {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid black;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 990px) {
+
+    .section-5 {
+        margin-top: 30px;
+        width: 100%;
+    }
+    
+    .div-section-5 {
+        background-color: rgb(255, 204, 0);
+        border-bottom: 1px solid black;
+        height: 15vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .div-section-5-img {
+        background-color: rgb(255, 204, 0);
+        width: 100%;
+        height: 46vh;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    
+    .keyboards {
+        width: 95vw;
+    }
+    
+    marquee {
+        font-size: 80px;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+
+    .list-8 {
+        width: 96%;
+        margin: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: 200px;
+    }
+    
+    .box-list-8 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid black;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .span-list-8 {
+        font-size: 20px;
+    }
+    
+    .span-list-8-small {
+        font-size: 20px;
+    }
+    
+    .span-list-8-facebook {
+        font-size: 40px;
+    }
+    
+    .arrow-8 {
+        width: 40px;
+    }
+    
+    .eye {
+        width: 80%;
+    }
+    
+    .box-list-8-eye {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid black;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    footer {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 0;
+    }
+    
+    .bocca {
+        width: 100vw;
+        height: 50%;
+        background-color: rgb(101, 13, 151);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .freccia {
+        width: 100vw;
+        height: 50%;
+        background-color: #fc3636;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .bocca-img {
+        width: 50vw !important;
+        margin: auto;
+    }
+    
+    .freccia-inizio {
+        width: 50vw;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    header {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 100%;    /*25% 60% 5%;*/
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "FM"
+        "Play"
+        "Song";
+    }
+
+    .play-img {
+        width: 500px;
+        margin: 0px;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+
+    .FM-img {
+        cursor: pointer;
+        width: 35vh;
+    }
+
+    .text-header {
+        padding: 20px;
+        margin-top: 10vh;
+    }
+    
+    .play-img {
+        height: auto;
+        width: 80%;
+        margin: 0px;
+        padding-left: 3vw;
+        cursor: pointer;
+    }
+
+    .testa-online-list p {
+        font-size: 60px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .online-span, .FM-span {
+        font-size: 70px;
+    }
+
+    .pecora {
+        width: 100%;
+        height: auto;
+        padding-top: 3vw;
+        padding-bottom: 2vw;
+        padding-left: 0px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sheep {
+        position: initial;
+        width: 55vw;
+    }
+
+    .h1-section-8 {
+        font-weight: 800;
+        font-size: 25vw;
+        line-height: 80px;
+    }
+
+    footer {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 0;
+    }
+    
 }
