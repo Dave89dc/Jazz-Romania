@@ -41,7 +41,7 @@ header{
 
 .text-header-box {
     height: 100%;
-    width: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -56,7 +56,6 @@ header{
 .play-img {
     height: 100vh;
     margin: 0px;
-    padding-left: 3vw;
     cursor: pointer;
 }
 
@@ -279,7 +278,7 @@ section, footer {
     font-size: 70px;
     margin: 0px;
     padding: 0px;
-    padding-left: 50%;
+    padding-left: 45vw;
 }
 
 .device-span-p {
@@ -287,7 +286,6 @@ section, footer {
     margin:0;
     margin-top: 20px;
     margin-bottom: 5px;
-    margin-right: 15px;
 }
 
 
@@ -637,6 +635,16 @@ footer {
 
 }
 
+@media screen and (max-width: 1490px) {
+
+    .play-img {
+        height: 57vw;
+        margin: 0px;
+        cursor: pointer;
+    }
+
+}
+
 @media screen and (max-width: 1380px) {
 
     .container3-section-2 {
@@ -722,7 +730,7 @@ footer {
         height: auto;
         display: grid;
         grid-template-columns: 100%;    /*25% 60% 5%;*/
-        grid-template-rows: 18vh 68vh 38vh;
+        grid-template-rows: 40vh 60vh 38vh;
         grid-template-areas: 
         "FM"
         "Play"
@@ -730,9 +738,9 @@ footer {
     }
 
     .play-img {
-        width: 500px;
+       height: 550px;
+        padding-left: 2vw;
         margin: 0px;
-        padding-left: 20px;
         cursor: pointer;
     }
 
@@ -1048,6 +1056,18 @@ footer {
     
 }
 
+@media screen and (max-width: 1025px) {
+
+    .container2-section-2 {
+        height: auto;
+    }
+
+    .letter-A {
+        width: 90vw;
+    }
+
+}
+
 @media screen and (max-width: 990px) {
 
     .section-5 {
@@ -1142,7 +1162,7 @@ footer {
     
     .bocca {
         width: 100vw;
-        height: 50%;
+        height: 50vh;
         background-color: rgb(101, 13, 151);
         display: flex;
         justify-content: center;
@@ -1151,7 +1171,7 @@ footer {
     
     .freccia {
         width: 100vw;
-        height: 50%;
+        height: 50vh;
         background-color: #fc3636;
         display: flex;
         justify-content: center;
@@ -1165,7 +1185,7 @@ footer {
     }
     
     .freccia-inizio {
-        width: 50vw;
+        width: 40vw;
         margin: auto;
     }
 
@@ -1192,6 +1212,21 @@ footer {
         cursor: pointer;
     }
 
+    .text-header-box {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .span2{
+        font-size: 18px;
+    }
+    
+
     .FM-img {
         cursor: pointer;
         width: 35vh;
@@ -1210,14 +1245,86 @@ footer {
         cursor: pointer;
     }
 
+    .testa-lista-FM > p {
+        font-size: 30px;
+    }
+
     .testa-online-list p {
         font-size: 60px;
         margin: 0px;
         padding: 0px;
     }
 
+    .online-list {
+        width: 91vw;
+        margin: auto;
+        height: auto;
+        position: initial;
+    }
+    
+    .online-list > div {
+        width: 96%;
+        margin: auto;
+        padding: 0px;
+        height: auto;
+        border-bottom: 1px solid black;
+        margin-left: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .testa-online-list p {
+        font-size: 30px;
+        margin: 0px;
+        padding: 0px;
+    }
+
     .online-span, .FM-span {
-        font-size: 70px;
+        font-size: 50px;
+    }
+
+    .device-list > div {
+        width: 95%;
+        margin: auto;
+        height: auto;
+        border-bottom: 1px solid black;
+        padding: 0px;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .device-span {
+        font-size: 50px;
+        margin-left: 20px;
+    }
+
+    .testa-device-list {
+        display: flex;
+        align-items: start;
+    }
+    
+    .testa-device-list p {
+        font-size: 30px;
+        margin: 0px;
+        padding: 0px;
+        padding-left: 0px;
+    }
+    
+    .device-span-p {
+        font-size: 30px;
+        margin: 0px;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    
+    .device-paragraf {
+        padding-top: 0px;
+        font-size: 18px;
+        margin-top: 0px;
+        margin-bottom: 20px;
     }
 
     .pecora {
